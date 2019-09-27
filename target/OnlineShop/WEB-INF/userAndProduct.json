@@ -1,0 +1,143 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "kasza",
+      "description": "sypka i fajna",
+      "photo": null,
+      "price": 10.0,
+      "quantity": 15
+    },
+    {
+      "id": 2,
+      "name": "Baton 3Bit",
+      "description": "ciastko, karmel, czekolada",
+      "photo": null,
+      "price": 3.0,
+      "quantity": 27
+    },
+    {
+      "id": 3,
+      "name": "kilo gwoździ",
+      "description": "gwoździe w tutce",
+      "photo": null,
+      "price": 11.99,
+      "quantity": 127
+    },
+    {
+      "id": 4,
+      "name": "nic",
+      "description": "nic",
+      "photo": null,
+      "price": 0.0,
+      "quantity": 99999999
+    },
+    {
+      "id": 5,
+      "name": "cosik",
+      "description": "kup a sie przekonasz",
+      "photo": null,
+      "price": 123.99,
+      "quantity": 99999999
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "bart7801",
+      "password": "1111",
+      "totalCashSpend": 3900,
+      "name": "Bart",
+      "surname": "S",
+      "role": "admin"
+    },
+    {
+      "id": 4,
+      "username": "KamilSuperson",
+      "password": "Kamil",
+      "totalCashSpend": 0,
+      "name": "Kamil",
+      "surname": "Superson",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "username": null,
+      "password": null,
+      "totalCashSpend": 0,
+      "name": null,
+      "surname": null,
+      "role": "user"
+    },
+    {
+      "id": 6,
+      "username": "Marek",
+      "password": "Marek",
+      "totalCashSpend": 0,
+      "name": "Marek",
+      "surname": "Marek",
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "username": null,
+      "password": null,
+      "totalCashSpend": 0,
+      "name": null,
+      "surname": null,
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "username": "jan",
+      "password": "1234",
+      "totalCashSpend": 0,
+      "name": "Jan",
+      "surname": "Kowalski",
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "username": null,
+      "password": null,
+      "totalCashSpend": 0,
+      "name": null,
+      "surname": null,
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "username": "pansam",
+      "password": "1111",
+      "totalCashSpend": 0,
+      "name": "Pan",
+      "surname": "Sam",
+      "role": "user"
+    },
+    {
+      "id": 9,
+      "username": null,
+      "password": null,
+      "totalCashSpend": 0,
+      "name": null,
+      "surname": null,
+      "role": "user"
+    },
+    {
+      "id": 10,
+      "username": "pawel",
+      "password": "111",
+      "totalCashSpend": 0,
+      "name": "Pawel",
+      "surname": "Yui",
+      "role": "user"
+    }
+  ],
+  "id": 0,
+  "username": null,
+  "password": null,
+  "totalCashSpend": 0,
+  "name": null,
+  "surname": null,
+  "role": null
+}

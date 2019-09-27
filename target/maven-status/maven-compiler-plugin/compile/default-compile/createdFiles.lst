@@ -1,0 +1,9 @@
+uk\sda\javalon1\bart\OnlineShop\controller\CreateUserServlet.class
+uk\sda\javalon1\bart\OnlineShop\controller\ShoppingCartServlet.class
+uk\sda\javalon1\bart\OnlineShop\controller\ChangeDetailsServlet.class
+uk\sda\javalon1\bart\OnlineShop\model\User.class
+uk\sda\javalon1\bart\OnlineShop\model\UsersAndProducts.class
+uk\sda\javalon1\bart\OnlineShop\model\Product.class
+uk\sda\javalon1\bart\OnlineShop\controller\LogoutServlet.class
+uk\sda\javalon1\bart\OnlineShop\controller\ReadProductsServlet.class
+uk\sda\javalon1\bart\OnlineShop\controller\LoginServlet.class
