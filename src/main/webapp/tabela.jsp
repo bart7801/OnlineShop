@@ -16,7 +16,7 @@
 <div id="header">
     <h3>Witaj <%=data%>
     </h3>
-    <h5>Oto lista oferowanych produktow...</h5>
+    <h5>Here is the list of products offered...</h5>
 </div>
 
 <table>

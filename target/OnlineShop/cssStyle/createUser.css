@@ -1,0 +1,28 @@
+body {
+    background-color: lightskyblue;
+}
+
+main {
+    margin: 100px auto auto auto;
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+#header {
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+
+input:hover {
+    background-color: black;
+    color: white;
+}

@@ -57,7 +57,7 @@ public class ShoppingCartServlet extends HttpServlet {
         RequestDispatcher rd = req.getRequestDispatcher("productList.jsp");
         rd.forward(req, resp);
         resp.sendRedirect("productList.jsp");
-        // znalezc produkt w jsonie po id
+        // find a product in json by id
 
 
     }

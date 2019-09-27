@@ -25,30 +25,30 @@ public class CreateUserServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //pobranie danych od użytkownika
+        //taking data from the user
         String newName = req.getParameter("create_name");
         String newSurname = req.getParameter("create_surname");
         String newUserName = req.getParameter("create_userName");
         String newPassword = req.getParameter("create_password");
 
-        //odczyt danych
+        //data reading
         ObjectMapper mapper = new ObjectMapper();
         InputStream inStream = getServletContext().getResourceAsStream(path);
         UsersAndProducts usersAndProducts = mapper.readValue(new FileInputStream(path), UsersAndProducts.class);
 
-        //utworzenie listy z urzytkownikami i produktami
+        //creating a list of users and products
         List<User> listOfUsers = new ArrayList<>((usersAndProducts.getUsers()));
         List<Product> listOfProducts = new ArrayList<>(usersAndProducts.getProducts());
         User newUser = new User(listOfUsers.size() + 1, newUserName, newPassword, 0, newName, newSurname, "user");
 
-        //dodanie nowego użytkownika do listOfUsers
+        //adding a new user to listOfUsers
         listOfUsers.add(newUser);
 
-        //utworzenie nowego obiektu UsersAndProducts przez dodanie listOfProducts i listOfUsers
+        //create a new UsersAndProducts object by adding listOfProducts and listOfUsers
         usersAndProducts = new UsersAndProducts(listOfProducts, listOfUsers);
         mapper.writeValue(new FileOutputStream(path), usersAndProducts);
 
-        //przekierowanie do createUser.jsp
+        //redirect to createUser.jsp
         RequestDispatcher rd = req.getRequestDispatcher("createUser.jsp");
         rd.forward(req, resp);
     }

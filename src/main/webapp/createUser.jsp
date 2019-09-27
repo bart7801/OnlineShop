@@ -15,14 +15,14 @@
 <main>
     <h3 id="header">Aby się zalgowac wypełnij formularz</h3>
     <form method="post" action="CreateUserServlet">
-        <input type="text" name="create_name" placeholder="Imie"/>
-        <input type="text" name="create_surname" placeholder="Nazwisko"/>
+        <input type="text" name="create_name" placeholder="Name"/>
+        <input type="text" name="create_surname" placeholder="Surname"/>
         <input type="text" name="create_userName" placeholder="UserName"/>
         <input type="text" name="create_password" placeholder="Password"/>
-        <input type="submit" name="create_registry" value="Zarejestruj sie"/>
+        <input type="submit" name="create_registry" value="Sign up"/>
     </form>
     <form action="log.jsp" method="post">
-        <input type="submit" value="Powrot do logowania"/>
+        <input type="submit" value="Back to login"/>
     </form>
 </main>
 </body>

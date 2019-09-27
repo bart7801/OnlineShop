@@ -2,43 +2,51 @@
   "products": [
     {
       "id": 1,
-      "name": "kasza",
-      "description": "sypka i fajna",
+      "name": "groats",
+      "description": "loose and cool",
       "photo": null,
       "price": 10.0,
       "quantity": 15
     },
     {
       "id": 2,
-      "name": "Baton 3Bit",
-      "description": "ciastko, karmel, czekolada",
+      "name": "MARS",
+      "description": "cake, caramel, chocolate",
       "photo": null,
-      "price": 3.0,
-      "quantity": 27
+      "price": 0.99,
+      "quantity": 327
     },
     {
       "id": 3,
-      "name": "kilo gwoździ",
-      "description": "gwoździe w tutce",
+      "name": "a kilo of nails",
+      "description": "a kilo of nils in the bag",
       "photo": null,
       "price": 11.99,
       "quantity": 127
     },
     {
       "id": 4,
-      "name": "nic",
-      "description": "nic",
+      "name": "nothing",
+      "description": "nothing",
       "photo": null,
-      "price": 0.0,
-      "quantity": 99999999
+      "price": 1.99,
+      "quantity": 9
     },
     {
       "id": 5,
-      "name": "cosik",
-      "description": "kup a sie przekonasz",
+      "name": "something",
+      "description": "buy and you'll find out",
       "photo": null,
       "price": 123.99,
       "quantity": 99999999
+    },
+    {
+      "id": 6,
+      "name": "laptop",
+      "description": "Dell Latitude 5290 2-in-1 Travel Keyboard",
+      "photo": null,
+      "price": 1230.99,
+      "quantity": 7
     }
   ],
   "users": [

@@ -12,16 +12,16 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //pobranie ciasteczek
+        //downloading cookies
         Cookie[] cookies = req.getCookies();
         for (Cookie cookie : cookies) {
-            //jeśli ciasteczko na nazwe user_cookie to ustaw mu age na 0
+            //if the cookie name is user_cookie, set its age to 0
             if (cookie.getName().equals("user_cookie")) {
                 cookie.setMaxAge(0);
                 resp.addCookie(cookie);
             }
         }
-        //przekieruj do log.js
+        //redirect to log.js
         resp.sendRedirect("log.jsp");
     }
 

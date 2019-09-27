@@ -18,29 +18,29 @@ import java.util.List;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
-    //utworzenie stałej ze scieżką do pliku
+    //create a constant with a file path
     private final String path = "C:\\Users\\barts\\Documents\\JAVALON1\\OnlineShop\\src\\main\\webapp\\WEB-INF\\userAndProduct.json";
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //stworzenie ObjectMapper
+        //creation of ObjectMapper
         ObjectMapper mapper = new ObjectMapper();
 
-        //scieżka do pliku w programie
+        //path to the file in the program
         InputStream inStream = getServletContext().getResourceAsStream("WEB-INF\\jsonV1_json.json");
 
-        //wczytanie UsersAndProducts
+        //loading UsersAndProducts
         UsersAndProducts usersAndProducts = mapper.readValue(new FileInputStream(path), UsersAndProducts.class);
 
-        //utworzenie listy z userami
+        //creating a list with users
         List<User> listOfUsers = usersAndProducts.getUsers();
 
-        //pobranie od użytkownika danych
+        //downloading data from the user
         String name = req.getParameter("name").trim();
         String surname = req.getParameter("surname").trim();
         String password = req.getParameter("code").trim();
 
-        //warunek, jeśli Obiekt User zawiera elementy z listy userów to przenies do webIntro.jsp, jesli nie są takie same to wyswietl czerwony komunikat Wrong data
+        //condition, if the User Object contains elements from the list of users, move to webIntro.jsp, if they are not the same then display the red message Wrong data
         Boolean isLoginOk = false;
         for (User user : usersAndProducts.getUsers()) {
             if (name != null & name.equals(user.getName()) && surname != null & surname.equals(user.getSurname()) && password != null & password.equals(user.getPassword())) {
